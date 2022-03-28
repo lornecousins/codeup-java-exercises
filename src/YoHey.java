@@ -82,7 +82,5 @@ public class YoHey {
         y -= x;
         System.out.println(x);
         System.out.println(y);
-
-
     }
 }
