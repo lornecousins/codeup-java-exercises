@@ -2,14 +2,13 @@ public class ControlFlowExercises {
     public static void main(String[] args) {
         //1c For
         //
-        //    Create an integer variable i with a value of 5.
-        //    Create a for loop that runs so long as i is less than or equal to 15
-        //    Each loop iteration, output the current value of i, then increment i by one.
-        //5 6 7 8 9 10 11 12 13 14 15
+        //Create a do-while loop that will count by 2's starting with 0 and ending at 100. Follow each number with a new line.
 
-        int i = 5;
-        for (i = 5; i <= 15; i++) {
-            System.out.print(i + " ");
+        int i;
+        for (i = 0; i <= 100; i++) {
+            if (i % 2 == 0) {
+                System.out.print(i + " ");
+            }
         }
     }
 }
