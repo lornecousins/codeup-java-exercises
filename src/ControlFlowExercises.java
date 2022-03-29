@@ -2,45 +2,45 @@ import java.util.Scanner;
 
 public class ControlFlowExercises {
     public static void main(String[] args) {
-        //3
-        // Display a table of powers.
-        //
-        //    Prompt the user to enter an integer.
-        //    Display a table of squares and cubes from 1 to the value entered.
-        //    Ask if the user wants to continue.
-        //    Assume that the user will enter valid data.
-        //    Only continue if the user agrees to.
-        //
-        //Example Output
-        //
-        //What number would you like to go up to? 5
-        //
-        //Here is your table!
-        //
-        //number | squared | cubed
-        //------ | ------- | -----
-        //1      | 1       | 1
-        //2      | 4       | 8
-        //3      | 9       | 27
-        //4      | 16      | 64
-        //5      | 25      | 125
 
-        System.out.println("Welcome to the Squares and Cubes Table");
-        System.out.println();
+        //4
+        //Convert given number grades into letter grades.
+        //Prompt the user for a numerical grade from 0 to 100.
+        //Display the corresponding letter grade.
+        //Prompt the user to continue.
+        //Assume that the user will enter valid integers for the grades.
+        //The application should only continue if the user agrees to.
+        //
+        //        Grade Ranges:
+        //        A : 100 - 88
+        //        B : 87 - 80
+        //        C : 79 - 67
+        //        D : 66 - 60
+        //        F : 59 - 0
+
+
+        System.out.print("Please enter your grade: ");
         Scanner sc = new Scanner(System.in);
-        System.out.print("Enter an Integer: ");
-        int number = sc.nextInt();
-        System.out.println(("Number" + "  " + "Squared" + "  " + "Cubed"));
-        System.out.println("------ |" + " ------ |" + " ------");
-        for (int i = 1; i <= number; i++) {
-//            i = number;
-            int numberSquared = (int) Math.pow(i, 2);
-            int numberCubed = (int) Math.pow(i, 3);
-        String message = "\n" + i + "        " + numberSquared + "        " + numberCubed;
-            System.out.println(message);
-            System.out.println();
-        }
+//        String a = "A";
+//        String b = "B";
+//        String c = "C";
+//        String d = "D";
+//        String f = "F";
 
+        int grade = sc.nextInt();
+        if (grade <= 100 && grade >= 88) {
+            System.out.println("You're grade is an A");
+        } else if (grade < 88 && grade >= 80) {
+            System.out.println("You're grade is a B");
+        } else if (grade < 80 && grade >= 67) {
+            System.out.println("You're grade is a C");
+        } else if (grade < 67 && grade >= 60) {
+            System.out.println("You're grade is a D");
+        } else if (grade < 60) {
+            System.out.println("You're grade is an F");
+        } else {
+            System.out.println("Invalid Input");
+        }
     }
-    }
+}
 
