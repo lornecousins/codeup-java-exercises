@@ -18,17 +18,14 @@ public class ControlFlowExercises {
         //        D : 66 - 60
         //        F : 59 - 0
 
-
+        String input;
+        do {
         System.out.print("Please enter your grade: ");
         Scanner sc = new Scanner(System.in);
-//        String a = "A";
-//        String b = "B";
-//        String c = "C";
-//        String d = "D";
-//        String f = "F";
-
         int grade = sc.nextInt();
-        if (grade <= 100 && grade >= 88) {
+
+
+         if (grade <= 100 && grade >= 88) {
             System.out.println("You're grade is an A");
         } else if (grade < 88 && grade >= 80) {
             System.out.println("You're grade is a B");
@@ -41,6 +38,10 @@ public class ControlFlowExercises {
         } else {
             System.out.println("Invalid Input");
         }
-    }
+        System.out.println("would you like to continue? [y/n] ");
+        input = sc.next();
+    } while (input.equals("y"));
 }
+}
+
 
