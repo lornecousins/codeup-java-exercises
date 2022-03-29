@@ -1,19 +1,15 @@
 public class ControlFlowExercises {
     public static void main(String[] args) {
-        //1b Do While
+        //1c For
         //
-        //    Create a do-while loop that starts at 2, and displays the number squared on each line while the number is less than 1,000,000. Output should equal:
-        //
-        // 2
-        // 4
-        // 16
-        // 256
-        // 65536
+        //    Create an integer variable i with a value of 5.
+        //    Create a for loop that runs so long as i is less than or equal to 15
+        //    Each loop iteration, output the current value of i, then increment i by one.
+        //5 6 7 8 9 10 11 12 13 14 15
 
-        long i = 2;
-        do {
-                System.out.println(i + " ");
-            i *= i;
-            } while (i < 1000000);
+        int i = 5;
+        for (i = 5; i <= 15; i++) {
+            System.out.print(i + " ");
+        }
     }
 }
