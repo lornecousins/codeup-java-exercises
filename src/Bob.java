@@ -7,11 +7,11 @@ public class Bob {
         System.out.print("What's up?");
         do {
         String conversation = sc.nextLine();
-        if (conversation.endsWith("? ")) {
+        if (conversation.endsWith("?")) {
             System.out.println("Sure");
         } else if (conversation.endsWith("!")) {
             System.out.println("Whoa, chill out!");
-        } else if (conversation.equals("")) {
+        } else if (conversation.isEmpty()) {
                 System.out.println("Fine. Be that way!");
         } else {
             System.out.println("Whatever");

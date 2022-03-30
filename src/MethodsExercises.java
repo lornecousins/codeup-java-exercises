@@ -28,7 +28,7 @@ public class MethodsExercises {
 //    Methods Exercises:
         //1
 
-        int num1, num2, sum, difference, product, division;
+        int num1, num2, sum, difference, product, division, modulus;
         Scanner sc = new Scanner(System.in);
         System.out.print("First Number: ");
         num1 = sc.nextInt();
@@ -38,11 +38,12 @@ public class MethodsExercises {
         difference = subtractTwo(num1, num2);
         product = multiplyTwo(num1, num2);
         division = divideTwo(num1, num2);
+        modulus = modulateTwo(num1, num2);
         System.out.println("Sum: " + sum);
         System.out.println("Difference: " + difference);
         System.out.println("Product: " + product);
         System.out.println("Division: " + division);
-
+        System.out.println("Modulus: " + modulus);
     }
         public static int addTwo(int a, int b) {
         int sum = a + b;
@@ -60,6 +61,13 @@ public class MethodsExercises {
             int division = a / b;
             return division;
     }
+        public static int modulateTwo(int a, int b) {
+        int modulus = a % b;
+        return modulus;
 
+
+        //2
+
+    }
 }
 
