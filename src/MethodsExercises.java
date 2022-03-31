@@ -67,17 +67,40 @@ public class MethodsExercises {
 
 
         //2
-        int validNumber = getInteger(1, 10);
+//        int validNumber = getInteger(1, 10);
+//        }
+//
+//        public static int getInteger(int min, int max) {
+//            int userInput;
+//            Scanner sc = new Scanner(System.in);
+//            do {
+//                System.out.print("Enter a number between " + min + " and " + max + ": ");
+//                userInput = sc.nextInt();
+//            } while (userInput < min || userInput > max);
+//            return userInput;
+
+
+        //3
+        long n, fact = 1;
+        Scanner sc = new Scanner(System.in);
+        while (true) {
+            System.out.print("Please enter a number between 1 and 10: ");
+            n = sc.nextLong();
+            if (n >= 1 && n <= 10) {
+                break;
+            }
+        System.out.println("Your number is out of range");
         }
 
-        public static int getInteger(int min, int max) {
-            int userInput;
-            Scanner sc = new Scanner(System.in);
-            do {
-                System.out.print("Enter a number between " + min + " and " + max + ": ");
-                userInput = sc.nextInt();
-            } while (userInput < min || userInput > max);
-            return userInput;
+       for(int i = 1; i < n; i++) {
+           fact = fact * i;
+        }
+        System.out.println("factorial = " + fact);
     }
 }
+
+
+
+
+
 
