@@ -41,7 +41,7 @@
             return nameOfDish;
             }
 
-        public void setWouldRecommend(boolean wouldRecommend) {
+        public void isWouldRecommend(boolean wouldRecommend) {
             this.wouldRecommend = wouldRecommend;
         }
 
@@ -50,14 +50,34 @@
         }
     }
 
+    class DishTools {
+        static final int AVG_COST_OF_DISH_IN_CENT = 13000;
+
+        public static void shoutDishName(Dish dish) {
+            System.out.println(dish.getNameOfDish().toUpperCase());
+        }
+
+        public static void analyzeDishCost(Dish dish) {
+            String moreOrLess =
+                    (dish.getCostInCents() > AVG_COST_OF_DISH_IN_CENT) ? "More" : "Less";
+
+            System.out.println(moreOrLess + " expensive than average");
+        }
+
+            public static void flipRecommendation(Dish dish) {
+            dish.getWouldRecommend(!dish.isWouldRecommend());
+            }
+    }
+
      class DishTest {
         public static void main(String[] args) {
 
             Dish dish1 = new Dish(7000, "tuna", true);
-                dish1.printSummary();
+            dish1.printSummary();
+            DishTools.flipRecommendation(dish1);
+            DishTools.shoutDishName(dish1);
+            DishTools.analyzeDishCost(dish1);
         }
     }
 
-class DishTools {
-    
-            }
+
