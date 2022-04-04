@@ -31,13 +31,11 @@ public class ServerNameGenerator {
         noun[8] = "building";
         noun[9] = "patch";
 
-        System.out.println("Here is your server name: \n " + randomElement(adjective) + " - " + randomElement(noun));
+        System.out.println("Here is your server name: \n" + randomElement(adjective) + " - " + randomElement(noun));
     }
 
     public static String randomElement(String[] array) {
         int random = new Random().nextInt(array.length);
         return array[random];
     }
-
-
 }
