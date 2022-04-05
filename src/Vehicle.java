@@ -4,7 +4,7 @@ public class Vehicle {
 
     private String vehicle;
 
-    public String getVehicle() {
+    public String getName() {
         return vehicle;
     }
 
@@ -13,7 +13,7 @@ public class Vehicle {
     }
 
 
-    public void setVehicle(String vehicle) {
+    public void setName(String vehicle) {
         this.vehicle = vehicle;
     }
 
