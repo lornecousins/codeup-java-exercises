@@ -98,8 +98,34 @@ public class MethodsExercises {
 //        System.out.println("factorial = " + fact);
 
 
-    //4
+        //4
 
+//    public static void diceRoll(){
+//        Scanner sc = new Scanner(System.in);
+//        String choice = "y";
+//
+//        do {
+//            System.out.println("How many sides does your dice have, between 4-20?");
+//            int diceSides = getInteger(4, 20);
+//            int min = 1;
+//            int range = diceSides - min + 1;
+//
+//            //random numbers
+//            for (int i = 0; i < diceSides; i++) {
+//                int random1 = (int) (Math.random() * range) + min;
+//                int random2 = (int) (Math.random() * range + min);
+//
+//                System.out.println("First Dice Rolls: " + random1);
+//                System.out.println("Second Dice Rolls: " + random2);
+//
+//                System.out.println("Would you loike to roll again? (y/n): ");
+//                choice = sc.next();
+//                System.out.println();
+//                sc.nextLine();
+//            }
+//            while (!choice.equalsIgnoreCase("n")) ;
+//        }
+//        }
     }
 }
 
