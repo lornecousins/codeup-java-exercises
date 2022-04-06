@@ -7,9 +7,16 @@ public class MonsterTest {
 
         Monster[] monsters = {orc, blueDragon, ogre};
 
-        for(Monster monster : monsters) {
+        for(Monster monster : monsters){
+            System.out.println(monster);
             System.out.println("The " + monster.getName() + " does " + monster.getDamage() + " points of damage");
         }
 
+        String result = ogre.attack(orc);
+        System.out.println(result);
+
+
     }
 }
+
+
