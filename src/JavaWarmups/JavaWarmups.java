@@ -1,3 +1,5 @@
+package JavaWarmups;
+
 public class JavaWarmups {
     public static char returnFirstCapitalLetter(String str) {
 
