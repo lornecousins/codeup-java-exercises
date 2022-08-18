@@ -1,8 +1,15 @@
 public class ExceptionsStudyTest {
     public static void main(String[] args) {
 //        try {
-            ExceptionsStudy exceptionsStudy = new ExceptionsStudy();
-            exceptionsStudy.askForAnInteger();
+        ExceptionsStudy exceptionsStudy = new ExceptionsStudy();
+//            exceptionsStudy.subListMaker("this is a sentence");
+        try {
+            exceptionsStudy.echoWordThrowCustomException();
+        } catch (CussWordException cx) {
+            System.out.println("How rude " + cx);
+        }
+
+//            exceptionsStudy.askForAnInteger();
 //            System.out.println(Integer.parseInt(study.maybeAnInteger));
 //            System.out.println(Integer.parseInt(study.certainlyNotAnInteger));
 //        } catch (NumberFormatException nfx) {

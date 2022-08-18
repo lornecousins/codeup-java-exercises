@@ -46,9 +46,9 @@ public class MethodsExercises {
 //        System.out.println("Modulus: " + modulus);
 //    }
 //        public static int addTwo(int a, int b) {
-//        int sum = a + b;
-//        return sum;
-//    }
+//            int sum = a + b;
+//            return sum;
+//        }
 //        public static int subtractTwo(int a, int b) {
 //            int difference = a - b;
 //            return difference;
@@ -81,21 +81,22 @@ public class MethodsExercises {
 
 
         //3
-//        long n, fact = 1;
-//        Scanner sc = new Scanner(System.in);
-//        while (true) {
-//            System.out.print("Please enter a number between 1 and 10: ");
-//            n = sc.nextLong();
-//            if (n >= 1 && n <= 10) {
-//                break;
-//            }
-//        System.out.println("Your number is out of range");
-//        }
-//
-//       for(int i = 1; i < n; i++) {
-//           fact = fact * i;
-//        }
-//        System.out.println("factorial = " + fact);
+        long n, fact = 1;
+        Scanner sc = new Scanner(System.in);
+        while (true) {
+            System.out.print("Please enter a number between 1 and 10: ");
+            n = sc.nextLong();
+            if (n >= 1 && n <= 10) {
+                break;
+            }
+        System.out.println("Your number is out of range");
+        }
+
+       for(int i = 1; i <= n; i++) {
+           fact = fact * i;
+
+        }
+        System.out.println("factorial = " + fact);
 
 
         //4

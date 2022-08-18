@@ -1,4 +1,5 @@
 package util;
+import java.util.InputMismatchException;
 import java.util.Scanner;
 
 public class Input {
@@ -22,18 +23,32 @@ public class Input {
         System.out.println("Enter an Integer between"+min+" & "+ max);
         int userInput=scanner.nextInt();
         if (userInput>min&&userInput<max){
-            System.out.println("int is with range");
+            System.out.println("int is within range");
             return userInput;
         }else {
             return getInt(min, max);
         }
     }
-    public int getInt(){
-        System.out.println("enter an Integer");
-        return scanner.nextInt();
+    public int getInt() {
+        System.out.println("Enter an integer: ");
+        String userInput = scanner.nextLine();
+        try {
+            return Integer.valueOf(userInput);
+        } catch (NumberFormatException nfx){
+            System.out.println("Number Format Exception");
+        }
+        return getInt();
     }
+//        try {
+//            System.out.println("enter an Integer");
+//            int inputInt = input.nextInt();
+//        } catch (InputMismatchException imx){
+//            System.out.println("Looks like you didn't enter an integer" + imx);
+//        }
+//        return scanner.nextInt();
+//        }
     public double getDouble(double min,double max){
-        System.out.println("enter an double between"+min+" & "+max);
+        System.out.println("enter a double between"+min+" & "+max);
         double userInput= scanner.nextDouble();
         if (userInput>min && userInput<max){
             System.out.println("double is within range");
